@@ -5,8 +5,8 @@ from sklearn.cluster import MeanShift, estimate_bandwidth
 # ===========================================
 # 1. CARGAR DATOS
 # ===========================================
-X = np.load("X.npy")             # Datos de 1000 puntos
-labels_true = np.load("Kmeans.npy")   # Etiquetas reales (tomas si lees esto le puse mal el nombre al archivo mira la carpeta meanshift)
+X = np.load("MeanShift/X.npy")             # Datos de 1000 puntos
+labels_true = np.load("MeanShift/Kmeans.npy")   # Etiquetas reales (tomas si lees esto le puse mal el nombre al archivo mira la carpeta meanshift)
 
 print("Shape de X:", X.shape)
 print("Cantidad de datos:", len(X))

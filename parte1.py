@@ -5,8 +5,8 @@ from sklearn.cluster import KMeans
 # ===========================
 # 1. CARGAR DATOS
 # ===========================
-A = np.load("A.npy")          # Puntos (1000 x 2)
-labels_true = np.load("_.npy")  # Etiquetas reales
+A = np.load("KMeans/A.npy")          # Puntos (1000 x 2)
+labels_true = np.load("KMeans/_.npy")  # Etiquetas reales
 
 print("Shape de los datos:", A.shape)
 print("Cantidad de datos:", len(A))
