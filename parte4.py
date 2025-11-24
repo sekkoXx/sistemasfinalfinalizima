@@ -17,7 +17,7 @@ cos_sim_PQ = cosine_similarity(P, Q)[0][0]
 cos_dis_PQ = cosine_distances(P, Q)[0][0]
 
 cos_sim_ST = cosine_similarity(S, T)[0][0]
-cos_sim_ST = cosine_distances(S, T)[0][0]
+cos_dis_ST = cosine_distances(S, T)[0][0]
 
 def con_angle(cos_sim):
     return math.degrees(math.acos(cos_sim))
@@ -27,5 +27,5 @@ angle_PQ = con_angle(cos_sim_PQ)
 angle_ST = con_angle(cos_sim_ST)
 
 print(f"Similitud del coseno AB: {cos_sim_AB:.2f}, PQ: {cos_sim_PQ:.2f}, ST: {cos_sim_ST:.2f}")
-print(f"Distancia del coseno AB: {cos_dis_AB:.2f}, PQ: {cos_dis_PQ:.2f}, ST: {cos_sim_ST:.2f}")
+print(f"Distancia del coseno AB: {cos_dis_AB:.2f}, PQ: {cos_dis_PQ:.2f}, ST: {cos_dis_ST:.2f}")
 print(f"Angulo de AB: {angle_AB:.2f}°, PQ: {angle_PQ:.2f}°, ST: {angle_ST:.2f}°")
