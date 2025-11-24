@@ -8,11 +8,6 @@ from sklearn.cluster import KMeans
 A = np.load("KMeans/A.npy")          # Puntos (1000 x 2)
 labels_true = np.load("KMeans/_.npy")  # Etiquetas reales
 
-print("Shape de los datos:", A.shape)
-print("Cantidad de datos:", len(A))
-print("Ejemplos de puntos:\n", A[:5])
-print("Ejemplos de etiquetas reales:\n", labels_true[:10])
-
 # ===========================
 # FIGURA A: Scatter sin colores
 # ===========================
